@@ -27,12 +27,12 @@ def threader():
 
 q = Queue()
 
-for x in range(2000):
+for x in range(150):
     t = threading.Thread(target = threader)
     t.daemon = True
     t.start()
 
-for worker_node in range (1, 10000):
+for worker_node in range (1, 1000):
     q.put(worker_node)
 
 q.join()    
