@@ -5,7 +5,7 @@ from queue import Queue
 socket.setdefaulttimeout(2)
 object_lock = threading.Lock()
 
-destination = input("Enter a destination: ")
+destination = "google.com"
 hostIP = socket.gethostbyname(destination)
 print("Scanning the host IP: ", hostIP)
 
